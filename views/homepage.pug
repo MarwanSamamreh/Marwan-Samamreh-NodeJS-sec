@@ -1,0 +1,14 @@
+// views/homePage.pug
+
+html
+  head
+    title Library Homepage
+  body
+    h1 Welcome to the Library
+    
+    a(href='/books') View All Books
+
+    form(action='/books', method='post')
+      label(for='bookName') Book Name:
+      input(type='text', id='bookName', name='name', required)
+      button(type='submit') Add Book

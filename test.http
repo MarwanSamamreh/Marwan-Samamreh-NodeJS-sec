@@ -1,0 +1,14 @@
+### Get Books List
+GET http://localhost:3000/books
+
+### Get Book Details by ID (Replace :id with the actual book ID)
+GET http://localhost:3000/books/1
+
+### Add a New Book
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "The Witcher 125"
+}
